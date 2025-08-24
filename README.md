@@ -22,3 +22,9 @@
     pip install -r requirements.txt
     ```
     - 数分かかる可能性あり
+- venv環境の停止
+    ```
+    deactivate
+    ```
+- venv環境の削除
+    - ローカルディレクトリの容量を削減したい場合、venvディレクトリを削除すればよい
