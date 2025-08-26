@@ -9,7 +9,8 @@
     - utilのrandom_sampling.py、concat_csv.pyを利用
 2. Ai.csvのデータが予選データセットの値域内に収まるかを確認
     - utilのcheck_csv.pyを利用
-    * dataのpre_columns_range.jsonの各特徴量のカテゴリがcheck_csv.pyのカテゴリに含まれていないため使えない？？
+    
+        ＊ dataのpre_columns_range.jsonの各特徴量のカテゴリがcheck_csv.pyのカテゴリに含まれていないため使えない？？
     - 値域外のデータが含まれる場合は、1.からやり直し
 3. Ai.csvより5000レコード、B17_i.csvより5000レコード抽出、結合（= tmp.csv）
 4. tmp.csv内に重複するレコードがないかチェック
