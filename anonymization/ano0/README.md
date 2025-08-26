@@ -18,11 +18,14 @@
 - 年齢群別にみる医療利用の分布差解析 : 0.16093943574035585
 
 ## 機械学習モデルの有効性スコア
+（得点）0.903200 * 20 = 
+<font color="red"> 18.064 / 20</font>
 - 学習フェーズ
     - 訓練データ：B17_1.csv
     - 検証データでの正解率：0.860000
 - 推論フェーズ
-    - テストデータ：
+    - テストデータ：test_data1.csv
+    - 正解率：0.903200
 
 
 
@@ -36,6 +39,10 @@
     ```
     python ..\..\analysis\xgbt_train.py ..\..\data_team17\B17_1.csv --model-json model.json
     ```
+- Dの有用性評価用のテストデータの作成
+    - data_team17/test_data/README.mdを参照
+
 - 機械学習モデルの有効性スコアの計算
     ```
+    python ..\..\analysis\xgbt_pred.py .\model.json --test-csv ..\..\data_team17\test_data\test_data1.csv > score2.txt
     ```
