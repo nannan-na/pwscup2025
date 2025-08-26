@@ -1,7 +1,7 @@
 # [PWS Cup 2025](https://www.iwsec.org/pws/2025/cup25.html)
 
 ## How to use
-上から順に実行すること。
+上から順に実行する。
 - リポジトリのクローン
     ```
     git clone git@github.com:nannan-na/pwscup2025.git
